@@ -6,7 +6,7 @@ const app = express()
 const port = process.env.PORT || 9000
 
 app.use(cors())
-app.user(express.json())
+app.use(express.json())
 
 app.use("/api/*",(_,res) =>{
     res.json({data: "The api lives!!"})
